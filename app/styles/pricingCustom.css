@@ -1,0 +1,214 @@
+body{margin-top:20px;}
+.promo-container {
+    margin-top:50px;
+}
+.promos {
+    margin: 0 auto
+}
+
+.promos:before,
+.promos:after {
+    content: '';
+    display: table
+}
+
+.promos:after {
+    clear: both
+}
+
+.promo {
+    margin: 15px 10px 25px;
+    padding: 5px 0 30px;
+    font-weight: 400;
+    line-height: 1.625;
+    text-align: center
+}
+
+.promos.bg-base-1,
+.promos.bg-base-2,
+.promos.bg-base-3,
+.promos.bg-base-4,
+.promos.bg-base-5 {
+    background: transparent !important
+}
+
+.promos.bg-base-1 .promo {
+    background: #3452ff
+}
+
+.promos.bg-base-2 .promo {
+    background: #292f36
+}
+
+.promos.bg-base-3 .promo {
+    background: #818a91
+}
+
+.promos.bg-base-4 .promo {
+    background: #2B2B2B
+}
+
+.promos.bg-base-5 .promo {
+    background: #FFF
+}
+
+.promo h4 {
+    margin: 15px 0 0;
+    font-size: 150%;
+    font-weight: normal
+}
+
+.promos.bg-base-1 .promo h4 {
+    color: #FFF
+}
+
+.promos.bg-base-2 .promo h4 {
+    color: #FFF
+}
+
+.promos.bg-base-3 .promo h4 {
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.promos.bg-base-4 .promo h4 {
+    color: #FFF
+}
+
+.promos.bg-base-5 .promo h4 {
+    color: #0A0814
+}
+
+.promo li {
+    padding: 5px 0;
+    font-size: .875rem
+}
+
+.promos.bg-base-1 .brief {
+    color: #FFF
+}
+
+.promos.bg-base-2 .brief {
+    color: #FFF
+}
+
+.promos.bg-base-3 .brief {
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.promos.bg-base-4 .brief {
+    color: #FFF
+}
+
+.promos.bg-base-5 .brief {
+    color: #0A0814
+}
+
+.promo .price {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 250%
+}
+
+.promo .features {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.promo .buy {
+    margin: 15px 0 0
+}
+
+.promos.bg-base-1 .promo .features {
+    color: #FFF
+}
+
+.promos.bg-base-2 .promo .features {
+    color: #FFF
+}
+
+.promos.bg-base-3 .promo .features {
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.promos.bg-base-4 .promo .features {
+    color: #FFF
+}
+
+.promos.bg-base-5 .promo .features {
+    color: #0A0814
+}
+
+.promos.bg-base-1 .promo .price {
+    background: #0127ff;
+    color: #FFF
+}
+
+.promos.bg-base-2 .promo .price {
+    background: #131619;
+    color: #FFF
+}
+
+.promos.bg-base-3 .promo .price {
+    background: #687077;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.promos.bg-base-4 .promo .price {
+    background: #121212;
+    color: #FFF
+}
+
+.promos.bg-base-5 .promo .price {
+    background: #e6e6e6;
+    color: #0A0814
+}
+
+@media (min-width: 768px) {
+    .promo {
+        display: inline;
+        float: left;
+        width: 33.333%;
+        margin: 15px 0 0;
+        transition: transform 0.25s ease-out
+    }
+    .promo.first {
+        border-right: none
+    }
+    .promo.second {
+        float: right;
+        border-left: none
+    }
+    .promo.first:hover,
+    .promo.second:hover {
+        transform: translateY(-25px)
+    }
+    .scale {
+        transform: scale(1.2)
+    }
+    .promos.bg-base-1 .scale {
+        box-shadow: 0 0 4px 1px #0127ff
+    }
+    .promos.bg-base-2 .scale {
+        box-shadow: 0 0 4px 1px #131619
+    }
+    .promos.bg-base-3 .scale {
+        box-shadow: 0 0 4px 1px #687077
+    }
+    .promos.bg-base-4 .scale {
+        box-shadow: 0 0 4px 1px #121212
+    }
+    .promos.bg-base-5 .scale {
+        box-shadow: 0 0 4px 1px #e6e6e6
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        margin-bottom: 2rem;
+        border-radius: .25rem
+    }
+    .promo:last-child {
+        margin-bottom: 0
+    }
+}

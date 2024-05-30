@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Others/NavbarLink.jsx", "app/appPages/authform/page.jsx", "app/appPages/homep/page.jsx", "app/appPages/login/page.Jsx", "app/appPages/landingPage/page.jsx", "app/layout.jsx", "app/page.jsx", "app/components/LandingPage/ourapp/components/LandingPage/keyBenefits.jsxBenefits.jsx", "app/components/LandingPage/howItWorks.jsx", "app/appPages/profile/page.jsx"],
+  "exclude": ["node_modules"]
+}

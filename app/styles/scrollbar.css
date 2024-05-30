@@ -1,0 +1,60 @@
+.scroll-container { 
+  height: 436px; 
+  overflow-y: scroll; 
+} 
+
+.scroll-container::-webkit-scrollbar { 
+  width: 5px; 
+} 
+
+.scroll-container::-webkit-scrollbar-track { 
+  background: #f1f1f1; 
+} 
+
+.scroll-container::-webkit-scrollbar-thumb { 
+  background: #888; 
+} 
+
+.scroll-container::-webkit-scrollbar-thumb:hover { 
+  background: #555; 
+} 
+
+.scroll-container::-webkit-scrollbar-button { 
+  display: none; 
+} 
+
+
+.showThankScreen{
+  z-index: 1; /* Set z-index to a higher value */
+
+
+
+
+}
+.navItemStyle{
+  font-family: Manrope;    
+  font-size: 18px;
+  line-height: 34px;
+  color: white;
+  border-bottom: 2px solid transparent;
+  margin-left: 30px;
+  transition: border-bottom 0.2s ease-in-out;
+}
+.navItemStyle:hover{
+  color: #0A273E;
+  text-decoration: none;
+}
+.activeNavItemStyle{
+  color: #0A273E;
+  font-weight: bold;
+  border-bottom: 2px solid #0A273E;
+  font-family: Manrope;    
+  font-size: 18px;
+  margin-left: 30px;
+  line-height: 34px;
+  transition: border-bottom 0.2s ease-in-out;
+}
+.activeNavItemStyle:hover{
+  color: #0A273E;
+  text-decoration: none;
+}
